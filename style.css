@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: Arial, sans-serif;
+  height: auto;
+}
+.cart-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 50px;
+  margin-top: 80px;
+}
+.heading {
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(88, 34, 88);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 2rem;
+}
+
+#itemName,
+#itemPrice {
+  width: 25rem;
+  height: 4rem;
+  outline: none;
+  font-size: 2rem;
+}
+
+.cart-btn {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+  gap: 20px;
+}
+
+.add-btn {
+  width: 15rem;
+  height: 5rem;
+  border: 2px solid rgb(88, 34, 88);
+  border-radius: 5px;
+  background-color: rgb(219, 113, 219);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+.add-btn:hover,
+.remove-btn:hover {
+  background-color: rgb(88, 34, 88);
+  transform: scale(1.05);
+}
+.remove-btn {
+  width: 20rem;
+  height: 5rem;
+  border: 2px solid rgb(88, 34, 88);
+  border-radius: 5px;
+  background-color: rgb(219, 113, 219);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+#cart {
+  font-size: 2rem;
+  line-height: 30px;
+  text-align: center;
+}
+#message {
+  color: rgb(160, 4, 160);
+  font-family: 3rem;
+  font-weight: 800;
+  padding-top: 10px;
+}
+/* Mobile styles (for screens smaller than 768px) */
+@media (max-width: 768px) {
+  .cart-container {
+    row-gap: 50px;
+    margin-top: 60px;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  .input-name,
+  .input-price {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+  #itemName,
+  #itemPrice {
+    width: 23rem;
+  }
+  .cart-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -20px;
+  }
+  .add-btn {
+    width: 17rem;
+    font-size: 1.7rem;
+  }
+  .remove-btn {
+    width: 27rem;
+    font-size: 1.7rem;
+  }
+  #cart {
+    font-size: 2rem;
+    line-height: 30px;
+    margin-top: -20px;
+    text-align: center;
+  }
+  #message {
+    color: rgb(160, 4, 160);
+    font-family: 2.3rem;
+    font-weight: 800;
+  }
+}

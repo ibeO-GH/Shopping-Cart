@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="cart-container">
+      <div class="heading">
+        <h1>Shopping Cart</h1>
+      </div>
+
+      <div class="input-container">
+        <div class="input-name">
+          <label for="itemName">Item Name:</label>
+          <input type="text" id="itemName" />
+        </div>
+
+        <div class="input-price">
+          <label for="itemPrice">Item Price:</label>
+          <input type="number" id="itemPrice" />
+        </div>
+      </div>
+
+      <div class="cart-btn">
+        <button class="add add-btn">Add to Cart</button>
+        <button class="remove remove-btn">Remove Last Item</button>
+      </div>
+
+      <div id="cart">
+        <p id="totalItems">Total Items: 0</p>
+        <p id="totalPrice">Total Price: $0.00</p>
+        <p id="freeShipping">Free Shipping: No</p>
+        <p id="message"></p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
