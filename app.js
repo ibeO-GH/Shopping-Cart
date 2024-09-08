@@ -1,3 +1,4 @@
+// Js code
 // Declaring variables
 let cart = [];
 const maxCapacity = 7;
