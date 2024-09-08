@@ -14,6 +14,8 @@ This page is a Shopping Cart Project page where shoppers can add and remove item
 
 ## Screenshot of how it looks
 
+## GitHub Pages - https://ibeo-gh.github.io/Shopping-Cart/
+
 <img src="/screenshots/screenshot1.png" alt="image" />
     <img src="/screenshots/screenshot2.png" alt="image" />
     <img src="/screenshots/screenshot3.png" alt="image" />
